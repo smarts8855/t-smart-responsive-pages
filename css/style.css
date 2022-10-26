@@ -44,8 +44,8 @@ code,pre{
     padding: 10px;
 }
 
-hidden {
-    visibility: hidden;
+.hidden {
+    display: none;
     padding: 10px;
 }
 /* Navbar */
