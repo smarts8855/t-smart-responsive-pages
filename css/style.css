@@ -89,6 +89,9 @@ code,pre{
 .showcase h1{
     font-size: 4opx;
 }
+.showcase h2{
+   color: rgba(75, 130, 213, 0.877);
+}
 
 .showcase p{
     margin: 20px 0;
@@ -114,13 +117,31 @@ code,pre{
 }
 
 .showcase-form .form-control{
+    position: relative;
     margin: 30px 0;
+}
+.showcase-form .form-control label{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    color: rgba(75, 130, 213, 0.877);
+}
+.showcase-form .form-control label span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.showcase-form .form-control input:focus + label span,
+.showcase-form .form-control input:valid + label span{
+    color: rgba(75, 130, 213, 0.877);
+    transform: translateY(-30px);
 }
 
 .showcase-form input[type='text'],
 .showcase-form input[type='email']{
     border: 0;
-    border-bottom: 1px solid #b4becb;
+    border-bottom: 1px solid lightblue;
     width: 100%;
     padding: 3px;
     font-size: 16px;
